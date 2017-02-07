@@ -15,6 +15,7 @@ Shader "Custom/Sample"
 		{
 			CGPROGRAM
 
+			#include "UnityCG.cginc"
 			#pragma vertex vert
 			#pragma fragment frag
 
@@ -44,7 +45,7 @@ Shader "Custom/Sample"
 				return o;
 			}
 
-			fixed4 frag(v2f v) ： SV_Target
+			fixed4 frag(v2f v) : SV_target
 			{
 				return tex2D(_Texture, v.uv) * _Color;
 			}

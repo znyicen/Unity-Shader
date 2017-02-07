@@ -23,7 +23,7 @@ Shader "Custom/Sample"
 
 			// 从应用读取参数
 			struct appdata {
-				fixed4 vertex : POSITIONT; // POSITION语义-变量含义
+				fixed4 vertex : POSITION; // POSITION语义-变量含义
 				fixed2 uv : TEXCOORD0;
 			};
 
